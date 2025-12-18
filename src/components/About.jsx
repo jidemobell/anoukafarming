@@ -12,12 +12,13 @@ const About = () => {
             <p>
               Located in the fertile lands of Borno State, Nigeria, Anouka Farms is dedicated to 
               sustainable agriculture and contributing to both Nigeria's and the world's food security. 
-              Our mission is to produce high-quality, nutritious crops while supporting local communities 
+              Our mission is to produce high-quality, nutritious crops and poultry products while supporting local communities 
               and promoting environmentally responsible farming practices.
             </p>
             <p>
               We specialize in cultivating a diverse range of crops suited to our region's climate, 
-              including grains, legumes, and cash crops. Our commitment to excellence and sustainability 
+              including grains, legumes, and cash crops. Recently, we've expanded our operations to include 
+              a poultry farm, providing fresh eggs and quality poultry meat to local markets. Our commitment to excellence and sustainability 
               drives us to implement modern farming techniques while respecting traditional agricultural wisdom.
             </p>
           </div>

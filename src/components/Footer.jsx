@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           
           <div className="footer-section">
-            <h4>Our Crops</h4>
+            <h4>Our Products</h4>
             <ul>
               <li>Millet</li>
               <li>Sorghum</li>
@@ -27,6 +27,7 @@ const Footer = () => {
               <li>Groundnuts</li>
               <li>Sesame</li>
               <li>Maize</li>
+              <li>Poultry</li>
             </ul>
           </div>
           
