@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,39 +34,26 @@ const Contact = () => {
         
         <div className="contact-content">
           <div className="contact-info">
+            <div className="welcome-card">
+              <h3>Let's Grow Together</h3>
+              <p>
+                Whether you're interested in bulk purchases, partnership opportunities, 
+                or simply want to learn more about sustainable farming in Borno State, 
+                we're here to help.
+              </p>
+              <p>
+                Fill out the form and our team will get back to you within 24-48 hours.
+              </p>
+            </div>
+            
             <div className="info-item">
               <div className="info-icon"><FaMapMarkerAlt /></div>
               <div>
-                <h3>Location</h3>
+                <h3>Visit Our Farm</h3>
                 <p>Anouka Farms<br />
                    Bolakil Farm Area<br />
                    Damboa Local Government<br />
                    Borno State, Nigeria</p>
-              </div>
-            </div>
-            
-            <div className="info-item">
-              <div className="info-icon"><FaPhone /></div>
-              <div>
-                <h3>Phone</h3>
-                <p></p>
-              </div>
-            </div>
-            
-            <div className="info-item">
-              <div className="info-icon"><FaEnvelope /></div>
-              <div>
-                <h3>Email</h3>
-                <p>info@anoukafarms.ng</p>
-              </div>
-            </div>
-            
-            <div className="info-item">
-              <div className="info-icon"><FaClock /></div>
-              <div>
-                <h3>Business Hours</h3>
-                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                <p>Saturday: 9:00 AM - 2:00 PM</p>
               </div>
             </div>
           </div>
