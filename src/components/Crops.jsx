@@ -1,9 +1,8 @@
 import React from 'react'
 import './Crops.css'
-import { GiChicken } from 'react-icons/gi'
 
 const Crops = () => {
-  const crops = [
+  const products = [
     {
       name: "Maize",
       description: "Staple grain crop providing food security and serving as a key ingredient in local cuisine and animal feed",
@@ -27,15 +26,14 @@ const Crops = () => {
       description: "High-value cash crop grown during the dry season, essential for Nigerian cuisine and markets",
       benefits: ["High market value", "Dry season crop", "Long storage life"],
       season: "Dry season (October-March)"
+    },
+    {
+      name: "Poultry",
+      description: "High-quality eggs and poultry meat, providing essential protein sources for local communities",
+      benefits: ["Fresh eggs", "Quality meat", "Sustainable practices"],
+      season: "Year-round production"
     }
   ]
-
-  const poultry = {
-    name: "Poultry Farm",
-    description: "Our poultry farm produces high-quality eggs and poultry meat, diversifying our agricultural output and providing essential protein sources for local communities.",
-    products: ["Fresh Eggs", "Broiler Chickens", "Layer Hens"],
-    benefits: ["Fresh local produce", "High-quality protein", "Sustainable practices"]
-  }
 
   return (
     <section id="crops" className="crops">
@@ -45,55 +43,24 @@ const Crops = () => {
           We cultivate a diverse range of crops and manage a poultry farm, all well-adapted to Borno State's climate 
           and contributing significantly to Nigeria's agricultural output and food security.
         </p>
-
-        {/* Poultry Section */}
-        <div className="poultry-section">
-          <div className="poultry-card">
-            <div className="poultry-icon"><GiChicken /></div>
-            <div className="poultry-content">
-              <h3>{poultry.name}</h3>
-              <p>{poultry.description}</p>
-              <div className="poultry-details">
-                <div className="poultry-products">
-                  <h4>Products:</h4>
-                  <ul>
-                    {poultry.products.map((product, idx) => (
-                      <li key={idx}>{product}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="poultry-benefits">
-                  <h4>Benefits:</h4>
-                  <ul>
-                    {poultry.benefits.map((benefit, idx) => (
-                      <li key={idx}>{benefit}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 className="crops-subheading">Our Crops</h3>
         
         <div className="crops-grid">
-          {crops.map((crop, index) => (
+          {products.map((product, index) => (
             <div key={index} className="crop-card">
-              <h3>{crop.name}</h3>
-              <p className="crop-description">{crop.description}</p>
+              <h3>{product.name}</h3>
+              <p className="crop-description">{product.description}</p>
               
               <div className="crop-benefits">
                 <h4>Key Benefits:</h4>
                 <ul>
-                  {crop.benefits.map((benefit, idx) => (
+                  {product.benefits.map((benefit, idx) => (
                     <li key={idx}>{benefit}</li>
                   ))}
                 </ul>
               </div>
               
               <div className="crop-season">
-                <strong>Growing Season:</strong> {crop.season}
+                <strong>{product.name === "Poultry" ? "Availability:" : "Growing Season:"}</strong> {product.season}
               </div>
             </div>
           ))}
@@ -101,8 +68,8 @@ const Crops = () => {
         
         <div className="crops-footer">
           <p>
-            All our crops are grown using sustainable farming practices that preserve soil health 
-            and support biodiversity while maximizing yield and quality.
+            All our products are produced using sustainable practices that preserve soil health, 
+            support biodiversity, and maximize quality.
           </p>
         </div>
       </div>
