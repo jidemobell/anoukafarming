@@ -2,7 +2,9 @@ import React from 'react'
 import './Hero.css'
 import farmImage from '../assets/images/farmproduce.jpeg'
 import { FaGlobeAfrica } from 'react-icons/fa'
-import { GiWheat, GiCorn, GiPeanut, GiGrain } from 'react-icons/gi'
+import { GiCorn, GiGrain, GiChicken } from 'react-icons/gi'
+import { LuWheatOff } from 'react-icons/lu'
+import { TbOnion } from 'react-icons/tb'
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -47,7 +49,7 @@ const Hero = () => {
               <div className="stat-label">Acres Cultivated</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">6</div>
+              <div className="stat-number">4</div>
               <div className="stat-label">Crop Varieties</div>
             </div>
             <div className="stat-item">
@@ -77,20 +79,20 @@ const Hero = () => {
           <div className="visual-container">
             <div className="crop-showcase">
               <div className="crop-item">
-                <div className="crop-icon"><GiWheat /></div>
-                <span>Millet</span>
-              </div>
-              <div className="crop-item">
                 <div className="crop-icon"><GiCorn /></div>
                 <span>Maize</span>
               </div>
               <div className="crop-item">
-                <div className="crop-icon"><GiPeanut /></div>
-                <span>Groundnuts</span>
+                <div className="crop-icon"><GiGrain /></div>
+                <span>Rice</span>
               </div>
               <div className="crop-item">
-                <div className="crop-icon"><GiGrain /></div>
-                <span>Cowpea</span>
+                <div className="crop-icon"><LuWheatOff /></div>
+                <span>Beans</span>
+              </div>
+              <div className="crop-item">
+                <div className="crop-icon"><GiChicken /></div>
+                <span>Poultry</span>
               </div>
             </div>
             <div className="hero-image-placeholder">

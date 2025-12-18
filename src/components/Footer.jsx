@@ -21,12 +21,10 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Our Products</h4>
             <ul>
-              <li>Millet</li>
-              <li>Sorghum</li>
-              <li>Cowpea</li>
-              <li>Groundnuts</li>
-              <li>Sesame</li>
               <li>Maize</li>
+              <li>Rice</li>
+              <li>Beans</li>
+              <li>Seasonal Onions</li>
               <li>Poultry</li>
             </ul>
           </div>

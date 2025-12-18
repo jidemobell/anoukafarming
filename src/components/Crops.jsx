@@ -5,46 +5,34 @@ import { GiChicken } from 'react-icons/gi'
 const Crops = () => {
   const crops = [
     {
-      name: "Millet",
-      description: "Drought-resistant grain crop, rich in nutrients and well-suited to Borno's climate",
-      benefits: ["High protein", "Gluten-free", "Drought tolerant"],
-      season: "Rainy season (May-October)"
-    },
-    {
-      name: "Sorghum",
-      description: "Versatile cereal grain used for food, animal feed, and traditional brewing",
-      benefits: ["High fiber", "Iron rich", "Climate resilient"],
-      season: "Rainy season (June-November)"
-    },
-    {
-      name: "Cowpea (Black-eyed Peas)",
-      description: "Protein-rich legume that improves soil fertility through nitrogen fixation",
-      benefits: ["High protein", "Soil improvement", "Multiple uses"],
+      name: "Maize",
+      description: "Staple grain crop providing food security and serving as a key ingredient in local cuisine and animal feed",
+      benefits: ["Staple food", "Animal feed", "Processing potential"],
       season: "Rainy season (May-September)"
     },
     {
-      name: "Groundnuts (Peanuts)",
-      description: "Oil-rich crop valuable for food security and export potential",
-      benefits: ["High oil content", "Export value", "Nutrition dense"],
-      season: "Rainy season (May-October)"
-    },
-    {
-      name: "Sesame",
-      description: "High-value oil seed crop with excellent market demand",
-      benefits: ["Premium oil", "Export crop", "Medicinal properties"],
+      name: "Rice",
+      description: "Premium paddy rice cultivated using sustainable irrigation methods to meet growing local demand",
+      benefits: ["High yield", "Local demand", "Food security"],
       season: "Rainy season (June-October)"
     },
     {
-      name: "Maize",
-      description: "Staple grain crop providing food security and animal feed",
-      benefits: ["Staple food", "Animal feed", "Processing potential"],
+      name: "Beans",
+      description: "Protein-rich legume that improves soil fertility through nitrogen fixation and serves as dietary staple",
+      benefits: ["High protein", "Soil improvement", "Affordable nutrition"],
       season: "Rainy season (May-September)"
+    },
+    {
+      name: "Seasonal Onions",
+      description: "High-value cash crop grown during the dry season, essential for Nigerian cuisine and markets",
+      benefits: ["High market value", "Dry season crop", "Long storage life"],
+      season: "Dry season (October-March)"
     }
   ]
 
   const poultry = {
     name: "Poultry Farm",
-    description: "Our newly acquired poultry farm produces high-quality eggs and poultry meat, diversifying our agricultural output and providing additional protein sources for local communities.",
+    description: "Our poultry farm produces high-quality eggs and poultry meat, diversifying our agricultural output and providing essential protein sources for local communities.",
     products: ["Fresh Eggs", "Broiler Chickens", "Layer Hens"],
     benefits: ["Fresh local produce", "High-quality protein", "Sustainable practices"]
   }
